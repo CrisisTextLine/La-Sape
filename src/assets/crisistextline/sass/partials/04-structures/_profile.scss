@@ -46,6 +46,14 @@
     .observe {
         margin-top: 0;
     }
+    .facebook-icon {
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        margin: 10px;
+        background-image: image-url('sprites-ficon.png');
+        background-position: -6px -6px;
+    }
     .repeater-flag-box {
         display: inline-block;
         margin: 7px 0 0 10px;
