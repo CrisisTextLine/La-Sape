@@ -25,3 +25,13 @@
   -ms-user-select: text;
   user-select: text;
 }
+
+.referral-admin-form {
+  label {
+    display: inline-block;
+    width: 8em;
+  }
+  input, select {
+    display: inline-block;
+  }
+}
