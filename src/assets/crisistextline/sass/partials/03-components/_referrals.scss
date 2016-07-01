@@ -37,4 +37,26 @@
   .hidden {
     display: none;
   }
+  table.layout {
+    border: 0px;
+    th, td {
+      padding: 0px;
+      background-color: $color-light;
+    }
+    section {
+      height: 100%;
+    }
+  }
+  table.contact-details {
+    tr {
+      background-color: $color-light;
+      &.add-more {
+        background-color: transparent;
+      }
+    }
+  }
+  section {
+    padding: 0 1em 1em;
+    background-color: $color-light;
+  }
 }
