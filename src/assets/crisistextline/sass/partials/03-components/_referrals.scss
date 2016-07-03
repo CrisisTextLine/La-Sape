@@ -17,46 +17,57 @@
 }
 
 .allow-select {
-  -webkit-user-select: text;
-  -khtml-user-drag: text;
-  -khtml-user-select: text;
-  -moz-user-select: text;
-  -moz-user-select: text;
-  -ms-user-select: text;
-  user-select: text;
+    -webkit-user-select: text;
+    -khtml-user-drag: text;
+    -khtml-user-select: text;
+    -moz-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
 }
 
 .referral-admin-form {
-  label {
-    display: inline-block;
-    width: 8em;
-  }
-  input, select {
-    display: inline-block;
-  }
-  .hidden {
-    display: none;
-  }
-  table.layout {
-    border: 0px;
-    th, td {
-      padding: 0px;
-      background-color: $color-light;
+    h2, h3 {
+        span {
+            @include normal-text();
+        }
     }
+
+    label {
+        display: inline-block;
+        width: 8em;
+    }
+    input, select {
+        display: inline-block;
+    }
+    .hidden {
+        display: none;
+    }
+
+    table {
+        &.layout {
+            border: 0px;
+            th, td {
+                padding: 0px;
+                background-color: $color-light;
+            }
+            section {
+              height: 100%;
+            }
+        }
+
+        &.contact-details {
+            tr {
+                background-color: $color-light;
+                &.add-more {
+                    background-color: transparent;
+                }
+            }
+        }
+    }
+
     section {
-      height: 100%;
+        padding: 0 1em 1em;
+        background-color: $color-light;
     }
-  }
-  table.contact-details {
-    tr {
-      background-color: $color-light;
-      &.add-more {
-        background-color: transparent;
-      }
-    }
-  }
-  section {
-    padding: 0 1em 1em;
-    background-color: $color-light;
-  }
 }
