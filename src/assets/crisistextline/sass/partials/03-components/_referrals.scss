@@ -62,13 +62,16 @@
             }
         }
 
-        &.contact-details {
+        &.contact-details, &.contact-point {
             tr {
                 background-color: $color-light;
                 &.add-more {
                     background-color: transparent;
                 }
             }
+        }
+        &.contact-point th {
+            background-color: $color-blue-hover;
         }
     }
 
