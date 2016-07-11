@@ -57,8 +57,8 @@
     }
     .action-box {
         background-color: white;
-        &.question {
-            @include action-box-color($color-question);
+        &.notification {
+            @include action-box-color($color-notification);
         }
         &.flag {
             @include action-box-color($color-flag);
