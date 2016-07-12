@@ -24,4 +24,9 @@ table {
             padding: 0;
         }
     }
+    &.dataTable {
+        tr.even {
+            background-color: $color-light;
+        }
+    }
 }
