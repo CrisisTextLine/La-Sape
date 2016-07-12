@@ -1,11 +1,3 @@
-#referral_search_what {
-    color: gray;
-}
-
-#referral_search_where {
-    color: gray;
-}
-
 .records_list {
     -webkit-user-select: text;
     -khtml-user-drag: text;
@@ -24,6 +16,15 @@
     -moz-user-select: text;
     -ms-user-select: text;
     user-select: text;
+}
+
+table {
+    &.referrals,
+    &.referrals-admin {
+        tr.even {
+            background-color: $color-light;
+        }
+    }    
 }
 
 .referral-admin-form {
