@@ -473,11 +473,14 @@
 }
 
 .sup-chat-cc {
+    height: calc(100% - 2em);
+
     textarea {
         width: 100%;
         height: 3em;
         position: absolute;
         bottom: 0;
+        resize: none;
     }
 
     .sup-chat-transcript {
@@ -485,6 +488,7 @@
         height: 15em;
         overflow-y: scroll;
     }
+
 }
 
 .message-super-popup {
