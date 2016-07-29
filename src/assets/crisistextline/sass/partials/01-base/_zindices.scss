@@ -8,16 +8,12 @@
 }
 
 body > div.flash {
-    z-index: 8000;
+    z-index: 8001;
 }
 
 .hopscotch-bubble {
-    z-index: 9500 !important;
+    z-index: 8000 !important;
 }
-
-// .toolbar {
-//     z-index: 5000;
-// }
 
 div[role="main"] .right-sidebar {
     z-index: 25;
