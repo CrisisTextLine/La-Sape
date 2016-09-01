@@ -9,8 +9,8 @@
 // Importing Compass helper functions
 @import "compass";
 
-// Importing Semantic UI styles, using Ruby SASS port at https://github.com/doabit/semantic-ui-sass
-@import "../../semantic-ui/app/assets/stylesheets/semantic-ui";
+// Importing our own overrides of Semantic UI
+@import "partials/01-base/semanticui";
 
 @import "partials/01-base/colors";
 @import "partials/01-base/dimensions";
