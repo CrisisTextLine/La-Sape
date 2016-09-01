@@ -1,0 +1,41 @@
+.pip {
+    position: relative;
+    .content {
+        border-radius: 0.25em;
+    }
+    .shape {
+        display: none;
+    }
+    &.custom-shape {
+        .content {
+            position: absolute;
+            background-color: transparent;
+            border-radius: 0;
+        }
+        .shape {
+            display: block;
+        }
+    }
+    &.square {
+        .content {
+            color: white;
+            top: 0;
+            left: .6em;
+        }
+        .shape {
+            margin-top: -.2em;
+            margin-left: .1em;
+            font-size: 1.4em;
+        }
+    }
+    &.star {
+        .content {
+            color: white;
+            top: 0;
+            left: .6em;
+        }
+        .shape {
+            font-size: 1.6em;
+        }
+    }
+}
