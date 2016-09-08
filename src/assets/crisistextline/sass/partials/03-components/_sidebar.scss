@@ -152,9 +152,16 @@ $user-status-height: 8.5em;
                 }
             }
 
+            .user-pip {
+                @include user-icon-square($color-green, 15px);
+                margin: 2px 8px 2px 4px;
+                font-size: 0.65em;
+                border-radius: 0.25em;
+            }
+
             &.chatting.show-count, &.away {
                 .user-pip {
-                    color: $color-gold;
+                    background-color: $color-gold;
                 }
                 .user-count {
                     color: $color-dark;
@@ -162,7 +169,7 @@ $user-status-height: 8.5em;
             }
             &.busy, &.chatting.busy {
                 .user-pip {
-                    color: darkred;
+                    background-color: darkred;
                 }
                 .user-count {
                     color: white;
@@ -197,7 +204,7 @@ $user-status-height: 8.5em;
 
             &.fadeout {
                 .user-pip {
-                    color: $color-med !important;
+                    background-color: $color-med !important;
                 }
                 .user-count {
                     font-style: italic;
@@ -225,6 +232,11 @@ $user-status-height: 8.5em;
         }
 
         &.one-year .user-name {
+            .user-pip {
+                @include user-icon-star($color-green);
+                font-size: 20px;
+                margin: -2px 1px 2px;
+            }
             &.chatting.available.show-count, &.away {
                 .user-pip {
                     color: $color-gold;
