@@ -9,6 +9,80 @@ $popup-fontsize: 11px;
 $popup-line-height: 1.4;
 $popup-quote-lines: 3;
 
+// Main Profile formatting
+.user-profile .profile-section {
+    .section-name {
+        font-size: 2em;
+        margin: 1rem 0;
+        font-weight: bold;
+    }
+    .section-name, .field-name {
+        color: white;
+        // font-weight: bold;
+        padding: .5rem 1rem;
+    }
+    .field-content {
+        overflow: hidden;
+        padding: 1.5rem 0;
+        text-align: center;
+        background-color: $color-light;
+        &:not(.size-normal) {
+            font-size: 6rem;
+        }
+        &:not(.weight-normal) {
+            font-weight: bold;
+        }
+        svg {
+            .axis {
+                path, line {
+                    fill: none;
+                    stroke: $color-med;
+                    shape-rendering: crispEdges;
+                }
+                &.x line, &.y path {
+                    display: none;
+                }
+            }
+        }
+    }
+    // Specific Sections
+    &.cc-hours {
+        .section-name, .field-name {
+            background-color: $color-blue;
+        }
+        .field-content {
+            color: $color-blue;
+        }
+    }
+    &.cc-impact {
+        .section-name, .field-name {
+            background-color: $color-green;
+        }
+        .field-content {
+            color: $color-green;
+        }
+    }
+    // Specific Fields
+    .profile-field {
+        &.cc-convo-count {
+            .field-content {
+                color: $color-dark;
+                font-size: 1.5rem;
+                .convo-icon {
+                    margin: auto;
+                    padding-top: 1.6rem;
+                    background-color: $color-light;
+                    background-image: image-url('comment-green.png');
+                    background-size: 100px 100px;
+                    width: 100px;
+                    height: 100px;
+                }
+            }
+        }
+    }
+}
+
+
 // Main Profile Card formatting
 .profile-card {
     div, img, a {
