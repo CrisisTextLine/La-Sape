@@ -33,6 +33,9 @@ $popup-quote-lines: 3;
             font-weight: bold;
         }
         svg {
+            text {
+                fill: $color-dark;
+            }
             .axis {
                 path, line {
                     fill: none;
@@ -52,6 +55,19 @@ $popup-quote-lines: 3;
         }
         .field-content {
             color: $color-blue;
+        }
+        svg {
+            rect {
+                fill: $color-blue;
+            }
+            .labels {
+                text {
+                    fill: white;
+                    &.lowVal {
+                        fill: $color-dark;
+                    }
+                }
+            }
         }
     }
     &.cc-impact {
