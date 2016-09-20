@@ -46,6 +46,14 @@ $popup-quote-lines: 3;
                     display: none;
                 }
             }
+            .background-shape {
+                fill: $color-med;
+            }
+            @for $i from 1 through 4 {
+                .zone-#{$i} {
+                    @include apply-queue-health-color($i, fill);
+                }
+            }
         }
     }
     // Specific Sections
@@ -92,6 +100,13 @@ $popup-quote-lines: 3;
                     background-size: 100px 100px;
                     width: 100px;
                     height: 100px;
+                }
+            }
+        }
+        &.cc-issue-types {
+            .field-content svg {
+                .shapes, .legend {
+                    fill: $color-green;
                 }
             }
         }
@@ -218,14 +233,11 @@ $popup-quote-lines: 3;
                 margin-right: $margin-user-profile-badge;
                 &.cc-level {
                     @include user-icon-square($color-med, $size-user-profile-badge);
-                    &.level-2 {
-                        background-color: $color-level-2;
-                    }
-                    &.level-3 {
-                        background-color: $color-level-3;
-                    }
-                    &.level-4 {
-                        background-color: $color-level-4;
+
+                    @for $i from 2 through 4 {
+                        &.level-#{$i} {
+                            @include apply-level-color($i, background-color);
+                        }
                     }
                 }
                 &.one-year {
