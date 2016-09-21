@@ -63,17 +63,6 @@ $popup-quote-lines: 3;
         .field-content {
             color: $color-blue;
         }
-        svg {
-            rect {
-                fill: $color-blue;
-            }
-            .labels text {
-                fill: white;
-                &.lowVal {
-                    fill: $color-dark;
-                }
-            }
-        }
     }
     &.cc-impact {
         .section-name, .field-name {
@@ -85,10 +74,27 @@ $popup-quote-lines: 3;
     }
     // Specific Fields
     .profile-field {
+        &.cc-hours-monthly {
+            .field-content {
+                padding: 3rem 0;
+            }
+            svg {
+                rect {
+                    fill: $color-blue;
+                }
+                .labels text {
+                    fill: white;
+                    &.lowVal {
+                        fill: $color-dark;
+                    }
+                }
+            }
+        }
         &.cc-convo-count {
             .field-content {
                 color: $color-dark;
                 font-size: 1.5rem;
+                padding: 2rem 0;
                 .convo-icon {
                     margin: auto;
                     padding-top: 1.6rem;
@@ -100,8 +106,16 @@ $popup-quote-lines: 3;
                 }
             }
         }
+        &.cc-queue-health {
+            .field-content {
+                padding: 2rem 0;
+            }
+        }
         &.cc-issue-types {
-            .field-content svg {
+            .field-content {
+                padding: 3rem 0;
+            }
+            svg {
                 .shapes, .snippet {
                     fill: $color-green;
                 }
@@ -113,6 +127,13 @@ $popup-quote-lines: 3;
                 }
                 .labels text {
                     fill: white;
+                }
+            }
+        }
+        &.cc-texter-sentiment {
+            svg {
+                .words text {
+                    fill: $color-green;
                 }
             }
         }
