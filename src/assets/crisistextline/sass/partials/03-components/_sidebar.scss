@@ -85,7 +85,7 @@ $user-status-height: 8.5em;
         padding: .5em 0;
         cursor: pointer;
         &.trainee .user-name {
-            color: $color-med-dark;
+            color: $color-trainee;
             .user-pip {
                 background-color: $color-med !important;
             }
