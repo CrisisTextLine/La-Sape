@@ -1,10 +1,3 @@
-$size-user-profile-badge: 22px;
-$margin-user-profile-badge: 8px;
-$width-user-profile-avatar: 100%;
-$size-user-profile-avatar: (3 * $size-user-profile-badge) + (2 * $margin-user-profile-badge);
-$size-quote-indent: 3em;
-$width-quote-textarea: 75%;
-
 $popup-avatar-size: 40px;
 $popup-fontsize: 11px;
 $popup-line-height: 1.4;
@@ -196,7 +189,7 @@ $popup-quote-lines: 3;
                 margin-left: 0;
             }
             .gravatar {
-                background-image: image-url('ctl-shortlogo-gray.png');
+                // background-image: image-url('ctl-shortlogo-gray.png');
             }
         }
         .badges {
@@ -272,43 +265,35 @@ $popup-quote-lines: 3;
     .profile-card-content > div {
         padding: 2rem 0 2rem 2rem !important;
     }
-    // padding: 2em;
-    // background: $color-light;
     .profile-card-left {
         padding-right: 2rem !important;
-        .avatar {
-            // width: $width-user-profile-avatar;
-            // .gravatar {
-            //     width: $width-user-profile-avatar;
-            //     // height: $size-user-profile-avatar;
-            //     // background-size: $width-user-profile-avatar $size-user-profile-avatar;
-            // }
-        }
-        .badges {
-            margin-top: 5px;
-            .badge {
-                width: $size-user-profile-badge;
-                height: $size-user-profile-badge;
-                margin-right: $margin-user-profile-badge;
-                &.cc-level {
-                    @include user-icon-square($color-med, $size-user-profile-badge);
+        // .badges {
+        //     margin-top: 5px;
+        //     .badge {
+        //         width: $size-user-profile-badge;
+        //         height: $size-user-profile-badge;
+        //         margin-right: $margin-user-profile-badge;
+        //         &.cc-level {
+        //             @include user-icon-square($color-med, $size-user-profile-badge);
 
-                    @for $i from 2 through 4 {
-                        &.level-#{$i} {
-                            @include apply-level-color($i, background-color);
-                        }
-                    }
-                }
-                &.one-year {
-                    @include user-icon-star($color-level-3);
-                    font-size: $size-user-profile-badge - 2px;
-                    margin-top: -1px;
-                }
-            }
-        }
+        //             @for $i from 2 through 4 {
+        //                 &.level-#{$i} {
+        //                     @include apply-level-color($i, background-color);
+        //                 }
+        //             }
+        //         }
+        //         &.one-year {
+        //             @include user-icon-star($color-level-3);
+        //             font-size: $size-user-profile-badge - 2px;
+        //             margin-top: -1px;
+        //         }
+        //     }
+        // }
     }
-    .profile-card-mid {
-        font-weight: bold;
+    .profile-card-mid, .profile-card-right {
+        label {
+            font-weight: bold;
+        }
     }
     .profile-card-right {
         // @include calc(width, 100% - #{$size-user-profile-avatar} - 1em);
@@ -337,13 +322,8 @@ $popup-quote-lines: 3;
         margin-top: 2em;
         position: relative;
         overflow: hidden;
-        padding-left: $size-quote-indent;
         button {
             float: left;
-            &.cancel {
-                float: right;
-                @include calc(margin-right, 100% - #{$width-quote-textarea} - #{$size-quote-indent});
-            }
         }
     }
 }
