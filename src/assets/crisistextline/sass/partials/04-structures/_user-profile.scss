@@ -5,6 +5,9 @@ $popup-quote-lines: 3;
 
 // Common wrapper styling for sections and profile card
 .user-profile {
+    .profile-card, .profile-section {
+        margin-bottom: 2rem;
+    }
     .profile-card .profile-card-name, .profile-section .section-name {
         font-size: 2em;
         font-weight: bold;
@@ -22,6 +25,7 @@ $popup-quote-lines: 3;
         margin: 1rem 0;
     }
     .field-name {
+        color: white;
         padding: .5rem 1rem;
     }
     .field-content {
@@ -217,32 +221,6 @@ $popup-quote-lines: 3;
     }
 }
 
-.supervisor-actions {
-
-    margin-top: 1em;
-
-    button {
-        background-color: $color-med-dark;
-        color: white;
-        margin-right: .5em;
-        margin-bottom: .5em;
-        background-size: 3em;
-        background-repeat: no-repeat;
-        background-position: left center;
-    }
-    button:hover {
-        background-color: $color-blue;
-    }
-    .good-egg {
-        background-image: image-url('egg-with-hearts-white.svg');
-        padding-left: 40px;
-    }
-    .funky-apple {
-        background-image: image-url('apple.svg');
-        padding-left: 45px;
-    }
-}
-
 // Profile Page Profile Card formatting (mainly adding in size dimensions)
 .user-profile .profile-card {
     .profile-card-name {
@@ -262,11 +240,14 @@ $popup-quote-lines: 3;
             background-color: $color-admin;
         }
     }
-    .profile-card-content > div {
-        padding: 2rem 0 2rem 2rem !important;
+
+    // Overriding Semantic UI's grid padding here
+    .ui.grid > .column:not(.row), .ui.grid > .row > .column {
+        padding: 2rem 0 2rem 2rem;
+        // padding-right: 1rem;
     }
+
     .profile-card-left {
-        padding-right: 2rem !important;
         // .badges {
         //     margin-top: 5px;
         //     .badge {
@@ -294,6 +275,56 @@ $popup-quote-lines: 3;
         label {
             font-weight: bold;
         }
+        input[type="text"], textarea {
+            display: block;
+        }
+        textarea {
+            width: 100%;
+            height: auto;
+        }
+        input[type="text"] {
+            width: 100%;
+        }
+        &> div {
+            margin-bottom: .5rem;
+        }
+    }
+    .profile-card-mid {
+        padding-right: 1rem !important;
+    }
+
+    .profile-card-right {
+        padding: 2rem 2rem 2rem 1rem !important;
+        span.value {
+            display: block;
+            &:before {
+                content: open-quote;
+            }
+            &:after {
+                content: close-quote;
+            }
+        }
+        // @include calc(width, 100% - #{$size-user-profile-avatar} - 1em);
+        // textarea {
+        //     width: $width-quote-textarea;
+        //     height: 6em;
+        // }
+        // input[type="text"] {
+        //     width: 100%;
+        //     max-width: 20em;
+        // }
+        // .quote {
+        //     margin-left: $size-quote-indent;
+        // }
+        // .quotemark {
+        //     height: $size-quote-indent;
+        //     .inner {
+        //         font-size: 4em;
+        //         font-style: normal;
+        //         font-weight: bold;
+        //         color: $color-med-dark;
+        //     }
+        // }
     }
     .profile-card-right {
         // @include calc(width, 100% - #{$size-user-profile-avatar} - 1em);
@@ -319,13 +350,14 @@ $popup-quote-lines: 3;
         // }
     }
     .edit-buttons {
-        margin-top: 2em;
-        position: relative;
-        overflow: hidden;
-        button {
-            float: left;
-        }
+        margin-top: 1.5rem !important;
+        // position: relative;
+        // overflow: hidden;
     }
+    // .supervisor-actions {
+    //     margin-top: 0;
+    //     padding-top: 0 !important;
+    // }
 }
 
 // Sidebar popup Profile Card formatting
@@ -367,6 +399,38 @@ $popup-quote-lines: 3;
             &:before, &:after {
                 content: "\0022";
             }
+        }
+    }
+}
+
+.supervisor-actions {
+    .ui.button {
+        // background-color: $color-med-dark !important;
+        // color: white !important;
+        background-size: 2rem !important;
+        background-repeat: no-repeat !important;
+        background-position: 1rem center !important;
+        width: 50%;
+        &.good-egg {
+            background-image: image-url('egg-with-hearts-white.svg');
+            // padding-left: 40px;
+        }
+        &.funky-apple {
+            background-image: image-url('apple.svg');
+            // padding-left: 45px;
+        }
+    }
+    .ui.button:hover {
+        color: white !important;
+        // background-size: 2rem !important;
+        // background-repeat: no-repeat !important;
+        // background-position: left center !important;
+        background-color: $color-blue !important;
+        &.good-egg {
+            background-image: image-url('egg-with-hearts-white.svg') !important;
+        }
+        &.funky-apple {
+            background-image: image-url('apple.svg') !important;
         }
     }
 }
