@@ -171,7 +171,6 @@ $popup-quote-lines: 3;
         }
         .edit-link {
             font-size: 1rem;
-            // font-weight: normal;
         }
     }
 
@@ -220,30 +219,6 @@ $popup-quote-lines: 3;
         }
     }
 
-    .profile-card-left {
-        // .badges {
-        //     margin-top: 5px;
-        //     .badge {
-        //         width: $size-user-profile-badge;
-        //         height: $size-user-profile-badge;
-        //         margin-right: $margin-user-profile-badge;
-        //         &.cc-level {
-        //             @include user-icon-square($color-med, $size-user-profile-badge);
-        //             @for $i from 2 through 4 {
-        //                 &.level-#{$i} {
-        //                     @include apply-level-color($i, background-color);
-        //                 }
-        //             }
-        //         }
-        //         &.one-year {
-        //             @include user-icon-star($color-level-3);
-        //             font-size: $size-user-profile-badge - 2px;
-        //             margin-top: -1px;
-        //         }
-        //     }
-        // }
-    }
-
     .profile-card-mid {
         padding-right: 1rem !important;
     }
@@ -260,6 +235,28 @@ $popup-quote-lines: 3;
             }
         }
     }
+    // TODO: Holding on badges for now
+    // .badges {
+    //     margin-top: 5px;
+    //     .badge {
+    //         width: $size-user-profile-badge;
+    //         height: $size-user-profile-badge;
+    //         margin-right: $margin-user-profile-badge;
+    //         &.cc-level {
+    //             @include user-icon-square($color-med, $size-user-profile-badge);
+    //             @for $i from 2 through 4 {
+    //                 &.level-#{$i} {
+    //                     @include apply-level-color($i, background-color);
+    //                 }
+    //             }
+    //         }
+    //         &.one-year {
+    //             @include user-icon-star($color-level-3);
+    //             font-size: $size-user-profile-badge - 2px;
+    //             margin-top: -1px;
+    //         }
+    //     }
+    // }
 }
 
 .supervisor-actions {
