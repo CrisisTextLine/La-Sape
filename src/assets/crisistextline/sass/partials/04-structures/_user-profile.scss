@@ -229,7 +229,6 @@ $popup-quote-lines: 3;
         //         margin-right: $margin-user-profile-badge;
         //         &.cc-level {
         //             @include user-icon-square($color-med, $size-user-profile-badge);
-
         //             @for $i from 2 through 4 {
         //                 &.level-#{$i} {
         //                     @include apply-level-color($i, background-color);
