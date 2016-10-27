@@ -1,0 +1,14 @@
+#help-button {
+    font-weight: normal;
+    color: white;
+    background-color: $color-blue;
+    width: 7em;
+    option {
+        color: $color-dark;
+        background-color: white;
+    }
+}
+
+select#help-button {
+    height: 1.5em;
+}
