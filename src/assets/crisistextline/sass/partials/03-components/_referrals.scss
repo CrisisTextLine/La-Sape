@@ -59,7 +59,7 @@ table {
         tr.even {
             background-color: $color-light;
         }
-    }    
+    }
 }
 
 .referrals {
@@ -104,6 +104,10 @@ table {
     }
     .tags-toggle, .details-toggle, .sub-programs-toggle {
         cursor: pointer;
+    }
+    .copy-url {
+        padding: 0.25em 0.4em;
+        margin-left: 0.5em;
     }
 }
 
