@@ -108,6 +108,11 @@ table {
     .copy-url {
         padding: 0.25em 0.4em;
         margin-left: 0.5em;
+
+        &.copied {
+            background-color: $color-blue;
+            color: white;
+        }
     }
 }
 
