@@ -480,6 +480,10 @@
         }
     }
 
+    &.priority-3 {
+        border: 2px solid $color-priority-3;
+    }
+
     &.high-priority {
         border: 2px solid $color-priority-4;
 
