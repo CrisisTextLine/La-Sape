@@ -622,33 +622,40 @@ input.ui-button::-moz-focus-inner, button.ui-button::-moz-focus-inner {
     .ui-policy-input {
         margin: -.75em 0 .75em 3em;
     }
-    .policy-tag-user_contact .ui-policy-input {
-        margin: 0.5em 0 0.75em 0;
+    .policy-tag-user_contact {
+        .ui-policy-input {
+            margin: 0.5em 0 0.75em 0;
 
-        input {
-            margin-right: 0.5em;
-            margin-bottom: 0.5em;
-            padding-left: 4px;
+            input {
+                margin-right: 0.5em;
+                margin-bottom: 0.5em;
+                padding-left: 4px;
+            }
+
+            .street {
+                width: 220px;
+            }
+
+            .apartment {
+                width: 132px;
+            }
+
+            .state {
+                width: 80px
+            }
+
+            .zipcode {
+                width: 110px;
+            }
+
+            .country {
+                width: 190px;
+            }
         }
 
-        .street {
-            width: 220px;
-        }
-
-        .apartment {
-            width: 132px;
-        }
-
-        .state {
-            width: 80px
-        }
-
-        .zipcode {
-            width: 110px;
-        }
-
-        .country {
-            width: 190px;
+        .ui-policy-checkbox {
+            display: flex;
+            align-items: center;
         }
     }
 
