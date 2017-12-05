@@ -23,7 +23,7 @@ $issues-width: 10em;
     }
 }
 
-.dataTables_wrapper #referral-table {
+#referrals-counselor .dataTables_wrapper #referral-table {
     @include calc(width, 100% - #{$issues-width} - 2em);
     margin-left: $issues-width + 2em;
 }
