@@ -44,7 +44,7 @@ $main-left-top: $tabs-height + $tabs-top;
         margin-top: .25em;
         position: relative;
     }
-    .observe {
+    .observe, .takeover {
         margin-top: 0;
     }
     .icons {
@@ -716,7 +716,7 @@ div.multi-text-more {
     }
 }
 
-button.observe {
+button.observe, button.takeover {
     line-height: 1em;
     padding: .6em 1em;
 }
