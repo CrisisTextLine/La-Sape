@@ -1,18 +1,5 @@
-#login-quote {
-    font-size: 3.5em;
-    text-indent: -0.45em;
-    margin-top: 0;
-
-    &.first-shift {
-        font-size: 2.5em;
-    }
-}
-
-#login-quote-author {
-    
-    &:before {
-        content: "-";
-    }
+#cboxOverlay {
+    background-color: white;
 }
 
 .overlay-close {
@@ -24,70 +11,57 @@
     right: 15px;
 }
 
-.super-intro-list {
-    list-style-type: none;
-    padding: 0;
+$width-intro-inner-margin: 2em;
+$width-intro-inner-border: 2px;
 
-    li {
-        
-        overflow-y: auto;
-        margin-top: 2em;
-
+#intro-screen {
+    margin-top: 2em;
+    .intro-strength-ids {
+        vertical-align: top;
+        display: inline-block;
+        @include calc(width, 70% - #{$width-intro-inner-margin} - #{$width-intro-inner-border});
+        .intro {
+            font-size: 1.5em;
+            margin-bottom: 1.5em;
+        }
+        .strength-id {
+            font-size: 5em;
+            font-weight: 700;
+            color: $color-blue;
+        }
+    }
+    .intro-supers {
+        border-left: $width-intro-inner-border solid $color-med;
+        padding-left: $width-intro-inner-margin;
+        vertical-align: top;
+        display: inline-block;
+        width: 30%;
+        ul {
+            padding: 0;
+            list-style-type: none;
+        }
+        li {
+            padding-bottom: 2em;
+            &:last-of-type {
+                padding-bottom: 1em;
+            }
+        }
+        .intro {
+            height: 4.5em;
+        }
         img {
-            height: 100px;
-            width: 100px;
-            margin-bottom: 5px;
-            float: left;
+            display: inline-block;
+            width: 60px;
+            height: 60px;
+            vertical-align: top;
         }
-
-        p {
-            margin-left: 110px;
-            margin-top: 0;
-            margin-top: 0;
-            margin-bottom: 0.3em;
+        .super-info {
+            padding-left: 1em;
+            display: inline-block;
+            vertical-align: top;
         }
-
-        .super-name {
-            font-size: 20px;
-            font-weight: bold;
+        .location {
+            font-size: .8em;
         }
-
-        .super-quote {
-            margin-top: 5px;
-            text-align: left;
-        }
-    }
-}
-
-$paddingLeftQuote : 38px;
-
-.intro-supers, .intro-quote {
-    margin: 10px;
-    position: relative;
-    width: 45%;
-    padding-left: $paddingLeftQuote;
-    display: inline-block;
-    vertical-align: top;
-    height: 90%;
-}
-
-.intro-quote {
-    margin-right: 28px;
-}
-
-.logout-wrapper {
-    padding-left: $paddingLeftQuote;
-}
-
-.intro-supers {
-    border-left: 1px solid;
-
-    h2 {
-        margin-top: 0;
-    }
-
-    &.first-shift {
-        width: 90%;
-        border: none;
     }
 }
