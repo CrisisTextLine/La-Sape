@@ -20,6 +20,9 @@ $issues-width: 10em;
         &:hover {
             background-color: $color-blue;
         }
+        &.active {
+            background-color: $color-blue;
+        }
     }
 }
 
