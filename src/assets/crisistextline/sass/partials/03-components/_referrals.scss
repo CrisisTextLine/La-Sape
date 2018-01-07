@@ -23,9 +23,7 @@ $issues-width: 10em;
     }
 }
 
-// TODO (TC): Temporarily commenting this out till we get the full referrals admin pagination deploying
-// #referrals-counselor .dataTables_wrapper #referral-table {
-.dataTables_wrapper #referral-table {
+#referrals-counselor .dataTables_wrapper #referral-table {
     @include calc(width, 100% - #{$issues-width} - 2em);
     margin-left: $issues-width + 2em;
 }
