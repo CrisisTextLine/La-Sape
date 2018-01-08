@@ -480,8 +480,58 @@
         }
     }
 
+    &.priority-3:before {
+        display: block;
+        content: "";
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        left: 0px;
+        top: 0px;
+        border-top: 2px solid $color-priority-3;
+        border-left: 2px solid $color-priority-3;
+        /* z-index: unset; */
+        pointer-events: none;
+    }
+
+    &.priority-3:after {
+        display: block;
+        content: "";
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        border-top: 2px solid $color-priority-3;
+        border-right: 2px solid $color-priority-3;
+        height: 50px;
+        width: 50px;
+        pointer-events: none;
+    }
+
     &.priority-3 {
-        border: 2px solid $color-priority-3;
+        .sup-convo-wrapper:before {
+            content: "";
+            display: block;
+            position: absolute;
+            left: 0px;
+            bottom: 0px;
+            width: 50px;
+            height: 50px;
+            border-left: 2px solid $color-priority-3;
+            border-bottom: 2px solid $color-priority-3;
+            pointer-events: none;
+        }
+        .sup-convo-wrapper:after {
+            content: "";
+            display: block;
+            position: absolute;
+            right: 0px;
+            bottom: 0px;
+            width: 50px;
+            height: 50px;
+            border-right: 2px solid $color-priority-3;
+            border-bottom: 2px solid $color-priority-3;
+            pointer-events: none; 
+        }
     }
 
     &.high-priority {
