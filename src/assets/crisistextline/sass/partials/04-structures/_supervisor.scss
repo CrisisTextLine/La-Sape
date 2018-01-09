@@ -488,8 +488,8 @@
         height: 50px;
         left: 0px;
         top: 0px;
-        border-top: 2px solid $color-priority-3;
-        border-left: 2px solid $color-priority-3;
+        border-top: 2px solid $color-orange-alert;
+        border-left: 2px solid $color-orange-alert;
         /* z-index: unset; */
         pointer-events: none;
     }
@@ -500,8 +500,8 @@
         position: absolute;
         right: 0px;
         top: 0px;
-        border-top: 2px solid $color-priority-3;
-        border-right: 2px solid $color-priority-3;
+        border-top: 2px solid $color-orange-alert;
+        border-right: 2px solid $color-orange-alert;
         height: 50px;
         width: 50px;
         pointer-events: none;
@@ -516,8 +516,8 @@
             bottom: 0px;
             width: 50px;
             height: 50px;
-            border-left: 2px solid $color-priority-3;
-            border-bottom: 2px solid $color-priority-3;
+            border-left: 2px solid $color-orange-alert;
+            border-bottom: 2px solid $color-orange-alert;
             pointer-events: none;
         }
         .sup-convo-wrapper:after {
@@ -528,8 +528,8 @@
             bottom: 0px;
             width: 50px;
             height: 50px;
-            border-right: 2px solid $color-priority-3;
-            border-bottom: 2px solid $color-priority-3;
+            border-right: 2px solid $color-orange-alert;
+            border-bottom: 2px solid $color-orange-alert;
             pointer-events: none; 
         }
     }
