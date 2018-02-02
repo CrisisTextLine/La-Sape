@@ -355,6 +355,15 @@ table.dataTable td {
         border-top-right-radius: 3px;
         border-bottom-right-radius: 3px;
       }
+
+      span .ui-state-disabled {
+        font-weight: bold;
+      }
+
+      &> .ui-state-disabled {
+        opacity: .6;
+      }
+
     }
   }
 

@@ -32,4 +32,30 @@ table {
     &.auto-width {
         width: auto;
     }
+
+    &.dt-table-override, &.dataTable.dt-table-override {
+        border: 1px solid $color-med;
+        border-collapse: collapse;
+        th {
+            background-color: $color-light;
+            color: $color-dark;
+        }
+        th, td {
+            border-bottom: 1px solid $color-med;
+            border-collapse: collapse;
+        }
+        thead th, tbody td {
+            padding: 1rem 1.5rem;
+        }
+        
+        thead {
+            .sorting_asc {
+              background-image: url(/bundles/crisistextgui/images/sort_asc.png);
+            }
+
+            .sorting_desc {
+              background-image: url(/bundles/crisistextgui/images/sort_desc.png);
+            }
+        }
+    }
 }
