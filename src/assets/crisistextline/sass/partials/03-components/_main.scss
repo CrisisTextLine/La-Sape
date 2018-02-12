@@ -22,16 +22,17 @@ body {
         background: $color-light;
         &>div {
             background: white;
-            width: 40em;
+            width: $width-login-form-container;
             height: auto;
             max-height: 100%;
             margin-top: 5em;
-            @include calc(margin-left, 50% - #{$width-login-form}/2 - #{$width-sidebar-left});
-            @include calc(margin-right, 50% - #{$width-login-form}/2);
+            @include calc(margin-left, 50% - #{$width-login-form-container}/2 - #{$width-sidebar-left}/2);
+            @include calc(margin-right, 50% - #{$width-login-form-container}/2);
             @include box-shadow(0 0 2em $color-med);
             text-align: center;
             overflow: visible;
             padding: 1em;
+            box-sizing: border-box;
         }
 
         @extend .login-form;
@@ -39,18 +40,21 @@ body {
 }
 
 .login-form {
+    form {
+        text-align: left;
+    }
     label {
         width: auto;
         display: block;
     }
-    input[type="text"],
-    input[type="password"],
-    input[type="submit"] {
-        line-height: 2em;
-        text-align: center;
-        font-size: 1.5em;
+    .form-field {
         width: $width-login-form;
-        margin: .5em;
+        margin: 0 auto !important;
+    }
+    input[type="text"],
+    input[type="password"] {
+        width: 100%;
+        margin: 0 0 1.5em;
     }
     input[type="submit"] {
         background: $color-blue;
@@ -58,7 +62,11 @@ body {
         cursor: pointer;
         border: 0;
         width: auto;
+        line-height: 2em;
+        text-align: center;
+        font-size: 1.5em;
         padding: .2em 2em;
+        margin: 1em 0 0.75em;
     }
     input:disabled {
         opacity: .4;
@@ -176,4 +184,12 @@ div[role="main"] {
 //Adding more padding to jqueryUI tables (Firefox)
 .dataTables_wrapper {
   padding-bottom: 3em;
+}
+
+.dataTables_filter input[type="search"] + select {
+    margin-left: 1em;
+}
+
+div[role="main"] .section-admin .dataTables_filter label {
+    display: inline;
 }
