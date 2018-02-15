@@ -186,6 +186,10 @@ div[role="main"] {
   padding-bottom: 3em;
 }
 
+.dataTables_filter input[type="search"] {
+    margin-bottom: 0.5em;
+}
+
 .dataTables_filter input[type="search"] + select {
     margin-left: 1em;
 }
