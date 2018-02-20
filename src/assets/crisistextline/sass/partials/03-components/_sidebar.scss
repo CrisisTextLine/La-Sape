@@ -78,6 +78,7 @@ $user-status-height: 9.25rem;
         }
 
         .status-message {
+            position: relative;
             margin-top: 1em;
         }
     }
@@ -382,9 +383,7 @@ $user-status-height: 9.25rem;
         height: 100%;
         overflow-y: scroll;
         padding: 0 8px;
-        background-color: #fff;
-        border: 1px solid #dadada;
-        border-radius: 4px;
+        border-top: 1px solid #dadada;
     }
 }
 
@@ -415,7 +414,7 @@ $user-status-height: 9.25rem;
     .chat-timestamp {
         display: inline-block;
         float: right;
-        color: $color-med;
+        color: $color-med-dark;
         font-style: italic;
     }
 }

@@ -32,7 +32,6 @@ body {
             text-align: center;
             overflow: visible;
             padding: 1em;
-            box-sizing: border-box;
         }
 
         @extend .login-form;
@@ -51,6 +50,9 @@ body {
         width: $width-login-form;
         margin: 0 auto !important;
     }
+    .form-field-submit {
+        margin-bottom: 1.25em !important;
+    }
     input[type="text"],
     input[type="password"] {
         width: 100%;
@@ -66,11 +68,15 @@ body {
         text-align: center;
         font-size: 1.5em;
         padding: .2em 2em;
-        margin: 1em 0 0.75em;
+        margin: 0 0.5em 0 0;
+        vertical-align: middle;
     }
     input:disabled {
         opacity: .4;
         cursor: auto;
+    }
+    .forgot-password {
+        vertical-align: middle;
     }
 }
 
@@ -178,7 +184,8 @@ div[role="main"] {
 }
 
 .login-custom-message {
-  margin-left: 15px;
+    margin-bottom: 1em;
+    margin-left: 15px;
 }
 
 //Adding more padding to jqueryUI tables (Firefox)
