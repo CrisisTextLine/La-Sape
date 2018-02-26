@@ -211,6 +211,12 @@
     .ban-request-form {
         text-align: center;
     }
+
+    &.todo-item {
+        input[type="text"] {
+            margin-top: 1em;
+        }
+    }
 }
 
 .sup-chats {
@@ -282,7 +288,7 @@
 }
 
 .sort-alpha {
-    margin-left: 30px;    
+    margin-left: 30px;
 }
 
 .user-conversations {
@@ -530,7 +536,7 @@
             height: 50px;
             border-right: 2px solid $color-orange-alert;
             border-bottom: 2px solid $color-orange-alert;
-            pointer-events: none; 
+            pointer-events: none;
         }
     }
 

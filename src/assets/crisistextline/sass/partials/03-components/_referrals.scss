@@ -166,6 +166,11 @@ table {
             }
         }
 
+        &.contact-point input[type="text"],
+        &.contact-point textarea {
+            width: 200px;
+        }
+
         &.contact-details, &.contact-point {
             tr {
                 background-color: $color-light;
