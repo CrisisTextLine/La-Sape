@@ -207,14 +207,6 @@
         .prioritize-arrow {
             @include prioritize-arrow(20px);
         }
-        // .prioritize-arrow-up,
-        // .prioritize-arrow-down {
-        //     display: none;
-        // }
-        // .prioritize-arrow.up .prioritize-arrow-up,
-        // .prioritize-arrow.down .prioritize-arrow-down {
-        //     display: block;
-        // }
     }
 
     .row {

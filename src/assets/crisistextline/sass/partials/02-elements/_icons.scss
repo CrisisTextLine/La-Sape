@@ -64,7 +64,7 @@ $yearStarList: $user-icon-year-1 $user-icon-year-2 $user-icon-year-3 $user-icon-
     }
     &.down {
         &:before{
-            content: "";
+            content: " ";
             color: $color-priority-2;
             width: $size;
             height: $size;
