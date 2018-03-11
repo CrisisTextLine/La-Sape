@@ -128,15 +128,17 @@ $user-status-height: 9.25rem;
         .user-name {
             position: relative;
             color: $color-dark;
-            display: block;
+            display: flex;
+            align-items: center;
             padding-right: 1.75em;
+            margin-bottom: 4px;
             // line-height: 1.5em;
 
             .user-count-container {
                 position: relative;
                 float: left;
                 width: 27px;
-                height: 25px;
+                height: 20px;
                 .user-count {
                     font-size: 0.75em;
                     position: absolute;
@@ -193,21 +195,30 @@ $user-status-height: 9.25rem;
 
             .remove-counselor {
                 position: absolute;
+                display: flex;
+                align-items: center;
                 text-decoration: none;
-                background-color: $color-red;
                 color: white;
-                right: 0;
-                top: 2px;
+                right: 2px;
+                top: 0;
+                bottom: 0;
                 width: 1.4em;
-                height: 1.4em;
                 line-height: 14px;
                 text-align: center;
                 border-radius: 0.25em;
                 font-size: 11px;
+                span {
+                    display: block;
+                    height: 1.4em;
+                    width: 100%;
+                }
+                svg {
+                    fill: #E21322;
+                }
             }
 
-            .remove-counselor:hover {
-                text-decoration: underline;
+            .remove-counselor:hover svg {
+                fill: #ed2c39;
             }
         }
 
@@ -267,6 +278,10 @@ $user-status-height: 9.25rem;
             &.new-grad, &.year-plus {
                 .user-name:after {
                     padding-left: .5em;
+                    display: flex;
+                    align-items: center;
+                    line-height: 1em;
+                    height: 1em;
                 }
             }
 

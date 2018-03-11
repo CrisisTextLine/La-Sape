@@ -1,5 +1,5 @@
 $namebar-top-margin: 2em;
-$namebar-height: 4em;
+$namebar-height: 5em;
 $tabs-top: $header-height + $namebar-top-margin + $namebar-height;
 $tabs-height: 2.5em;
 $main-left-top: $tabs-height + $tabs-top;
@@ -49,26 +49,18 @@ $main-left-top: $tabs-height + $tabs-top;
     }
     .icons {
         display: inline-block;
-        margin: .5em 0 0 .5em;
-        div {
-            display: inline-block;
-            vertical-align: middle;
-            margin-right: .5em;
-        }
+        margin: 8px 0 0 .75em;
         .icon-facebook {
+            display: inline-block;
             width: 18px;
             height: 18px;
-            background-image: image-url('sprites-ficon.png');
-            background-position: -12px -92px;
+            background: url('data:image/svg+xml;utf8,<svg fill="%23A3A3A3" width="18" height="18" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 71.96 71.96"><path d="M59.69,0H12.27A12.27,12.27,0,0,0,0,12.27V59.69A12.27,12.27,0,0,0,12.27,72H36.22V45.66h-8.8v-12h8.8V29c0-8.06,6.05-15.32,13.5-15.32h9.7v12h-9.7c-1.06,0-2.3,1.29-2.3,3.22v4.78h12v12h-12V72H59.69A12.27,12.27,0,0,0,72,59.69V12.27A12.27,12.27,0,0,0,59.69,0Z"/></svg>') no-repeat;
         }
         .icon-kik {
+            display: inline-block;
             width: 18px;
             height: 18px;
-            background-image: image-url('sprites-kikicon.png');
-            background-position: -12px -92px;
-        }
-        .repeater-flag-box {
-
+            background: url('data:image/svg+xml;utf8,<svg fill="%23A3A3A3" width="18" height="18" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 71.96 71.96"><path d="M59.69,0H12.27A12.27,12.27,0,0,0,0,12.27V59.69A12.27,12.27,0,0,0,12.27,72H59.69A12.27,12.27,0,0,0,72,59.69V12.27A12.27,12.27,0,0,0,59.69,0ZM41.83,62.71c-1.9,0-3-.72-4.19-2.52L29.21,47l-3.87,4v6.27c0,3-2.16,5.48-4.82,5.48s-4.82-2.45-4.82-5.48V14.73c0-3,2.15-5.48,4.82-5.48s4.82,2.45,4.82,5.48V38.65l12-13c1.4-1.51,2.53-2.45,4.25-2.45,2.6,0,4.25,2.38,4.25,4.9a6.86,6.86,0,0,1-2.22,4.76l-7.61,7.42,9.07,13.9a6.25,6.25,0,0,1,1.2,3.53A4.67,4.67,0,0,1,41.83,62.71ZM54.47,50.77a5.82,5.82,0,1,1,5.79-5.82A5.81,5.81,0,0,1,54.47,50.77Z"/></svg>') no-repeat;
         }
     }
     .local-timestamp {
@@ -555,7 +547,7 @@ $icon-width: 2em;
         clear: both;
         float: left;
         margin-bottom: 1em;
-        margin-left: 2.5em;
+        margin-left: 2.75em;
         cursor: default;
     }
     .conversation-status {
@@ -603,6 +595,7 @@ $icon-width: 2em;
         text-decoration: none;
         color: $color-med;
         font-weight: normal;
+        margin-left: 0.5em;
         &:hover {
             color: $color-med-dark;
         }
@@ -659,7 +652,7 @@ div[role="main"] .profile-fields {
     background: white;
     position: fixed;
     margin-top: -4.5em;
-    padding: .5em 1em 1em 1em;
+    padding: 1em 2em 1em 1em;
     margin-left: -1em;
     max-width: 33%;
 
@@ -667,11 +660,9 @@ div[role="main"] .profile-fields {
         width: 1.5em;
         line-height: 1.5em;
         position: absolute;
-        top: 0;
-        right: 0;
-        background: $color-dark;
+        top: 6px;
+        right: 3px;
         cursor: pointer;
-        color: white;
         text-align: center;
     }
     h2 {
