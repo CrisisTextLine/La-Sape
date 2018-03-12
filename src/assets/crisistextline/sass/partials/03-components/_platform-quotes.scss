@@ -3,12 +3,22 @@
 }
 
 .overlay-close {
-    border: 1px solid black !important;
     display: block;
     padding: .3em .5em;
     position: absolute;
     top: 0;
     right: 15px;
+    background-color: transparent;
+    opacity: 0.9;
+}
+
+.overlay-close:hover {
+    background-color: transparent !important;
+    opacity: 1;
+}
+
+.overlay-close:active {
+    opacity: 0.9;
 }
 
 $width-intro-inner-margin: 2em;
