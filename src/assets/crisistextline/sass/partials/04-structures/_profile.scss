@@ -299,6 +299,9 @@ div[role="main"] .right-sidebar {
             border-width: .6em;
             content: '';
         }
+        .delete {
+            cursor: pointer;
+        }
     }
 }
 
