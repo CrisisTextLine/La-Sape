@@ -21,8 +21,8 @@ nav, .nav {
 
     .toolbox-tab {
         .pip {
-            margin-left: -0.5em;    
-        }        
+            margin-left: -0.5em;
+        }
     }
 
     .pip {
@@ -48,6 +48,9 @@ nav, .nav {
             }
             &.action-item {
                 color: white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
                 &.flag { border: 1px solid white; }
                 &.notification { background-color: $color-notification; }
                 &.todo { background-color: $color-todo; }

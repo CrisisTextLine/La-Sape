@@ -22,10 +22,13 @@ $convo-plan-opacity: .10;
         margin: .6em .5em 0;
         background: image-url('sprites.png') no-repeat;
         background-position: -10px -130px;
-        background-color: white;
+        opacity: 0.9;
         &:hover {
-            background-color: $color-dark;
-            background-position: -50px -130px;
+            background-color: transparent !important;
+            opacity: 1.0;
+        }
+        &:active {
+            opacity: 0.9;
         }
     }
     .management-plan-save {
