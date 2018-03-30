@@ -266,6 +266,8 @@
         }
 
         &.priority-4 {
+            background: $color-orange-alert;
+
             .icon.icon-facebook {
                 background: url('data:image/svg+xml;utf8,<svg fill="%23FF9900" width="11" height="11" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 71.96 71.96"><path d="M59.69,0H12.27A12.27,12.27,0,0,0,0,12.27V59.69A12.27,12.27,0,0,0,12.27,72H36.22V45.66h-8.8v-12h8.8V29c0-8.06,6.05-15.32,13.5-15.32h9.7v12h-9.7c-1.06,0-2.3,1.29-2.3,3.22v4.78h12v12h-12V72H59.69A12.27,12.27,0,0,0,72,59.69V12.27A12.27,12.27,0,0,0,59.69,0Z"/></svg>');
             }
