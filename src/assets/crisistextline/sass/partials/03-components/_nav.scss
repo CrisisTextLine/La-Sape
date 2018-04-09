@@ -48,9 +48,10 @@ nav, .nav {
             }
             &.action-item {
                 color: white;
-                display: flex;
+                display: inline-flex;
                 align-items: center;
                 justify-content: center;
+                margin-right: 4px;
                 &.flag { border: 1px solid white; }
                 &.notification { background-color: $color-notification; }
                 &.todo { background-color: $color-todo; }
