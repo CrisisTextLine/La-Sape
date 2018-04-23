@@ -26,18 +26,25 @@ $width-intro-inner-border: 2px;
 
 #intro-screen {
     margin-top: 2em;
-    .intro-strength-ids {
+    .intro-content {
         vertical-align: top;
         display: inline-block;
         @include calc(width, 70% - #{$width-intro-inner-margin} - #{$width-intro-inner-border});
-        .intro {
+        .title {
             font-size: 1.5em;
             margin-bottom: 1.5em;
         }
-        .strength-id {
-            font-size: 5em;
+        .data-point,
+        .body-text {
             font-weight: 700;
             color: $color-blue;
+        }
+        .data-point {
+            font-size: 5em;
+        }
+        .body-text {
+            font-size: 3.5em;
+            width: 85%;
         }
     }
     .intro-supers {
