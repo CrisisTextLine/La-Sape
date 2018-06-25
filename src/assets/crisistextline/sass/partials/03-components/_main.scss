@@ -59,16 +59,11 @@ body {
         margin: 0 0 1.5em;
     }
     input[type="submit"] {
-        background: $color-blue;
-        color: white;
         cursor: pointer;
-        border: 0;
         width: auto;
         line-height: 2em;
         text-align: center;
         font-size: 1.5em;
-        padding: .2em 2em;
-        margin: 0 0.5em 0 0;
         vertical-align: middle;
     }
     input:disabled {
