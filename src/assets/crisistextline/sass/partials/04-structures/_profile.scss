@@ -69,14 +69,17 @@ $main-left-top: $tabs-height + $tabs-top;
 }
 
 #tabs {
-    position: fixed;
     top: $tabs-top;
     height: $tabs-height;
     display: block;
+    padding-bottom: 15px;
     .tab-item {
         display: inline-block;
+        @extend .buttonSecondary;
+        margin-right: 10px;
+
         &.active {
-            @include button-active-hover;
+            @extend .buttonPrimary;
             font-weight: bold;
         }
         &#tab-mgtplan {

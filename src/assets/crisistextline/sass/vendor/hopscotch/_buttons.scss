@@ -23,7 +23,7 @@ div.hopscotch-bubble .hopscotch-nav-button {
 
   // @include round-corners(3px);
   @include box-sizing();
-
+  
   &:hover {
     *zoom:1;
   //  @include box-shadow(0, 1px, 3px, rgba(0,0,0,0.25), false);
@@ -43,12 +43,24 @@ div.hopscotch-bubble .hopscotch-nav-button {
     text-shadow: 0 1px 1px rgba(0,0,0,0.35);
     @include gradient(#287bbc, #287bbc, #23639a);
     */
-    color: white;
-    background-color: $color-blue;
+    padding: .2em 1.5em;
+    background-color: #799bb2 !important;
+    text-transform: initial !important;
+    font-size: inherit;
+    border-radius: 7px;
+    border: 1px solid #799bb2;
+    color: #fff;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    text-align: center;
+    line-height: 1em;
+    min-height: 1em;
 
     &:hover, &:active {
       // @include gradient(#2672ae, #2672ae, #1e4f7e);
-      background-color: $color-blue-hover;
+      background-color: #afc3d1 !important;
+      border: 1px solid #afc3d1;
+      color: #fff;
     }
   }
 
