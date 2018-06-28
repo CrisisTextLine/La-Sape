@@ -39,13 +39,9 @@ $main-left-top: $tabs-height + $tabs-top;
     }
     .title-right {
         float: right;
-        line-height: 2em;
         margin-left: 1rem;
         margin-top: .25em;
         position: relative;
-    }
-    .observe, .takeover {
-        margin-top: 0;
     }
     .icons {
         display: inline-block;
@@ -73,14 +69,17 @@ $main-left-top: $tabs-height + $tabs-top;
 }
 
 #tabs {
-    position: fixed;
     top: $tabs-top;
     height: $tabs-height;
     display: block;
+    padding-bottom: 15px;
     .tab-item {
         display: inline-block;
+        @extend .buttonSecondary;
+        margin-right: 10px;
+
         &.active {
-            @include button-active-hover;
+            @extend .buttonPrimary;
             font-weight: bold;
         }
         &#tab-mgtplan {
@@ -711,9 +710,10 @@ div.multi-text-more {
     }
 }
 
-button.observe, button.takeover {
-    line-height: 1em;
-    padding: .6em 1em;
+button.buttonPrimary.initiate:enabled {
+    background-color: #e6baaf !important;
+    color: #000;
+    border-color: #e6baaf;
 }
 
 #number-request-explanation {

@@ -96,16 +96,59 @@ button.active,
 
 // Semantic UI Button overrides //
 .ui.button {
-    color: $color-dark;
-    background-color: $color-med-light;
+    padding: .2em 1.5em;
+    background-color: #799bb2 !important;
+    text-transform: initial !important;
+    font-size: inherit;
+    border-radius: 7px;
+    border: 1px solid #799bb2;
+    color: #fff;
     &:focus, &:active, &:hover {
         &:not(.ui-state-disabled) {
-            color: white;
-            background-color: $color-blue;
+            background-color: #afc3d1 !important;
+            border: 1px solid #afc3d1;
+            color: #fff;
         }
         &.ui-state-disabled {
-            color: $color-dark;
-            background-color: $color-med-light;
+            background-color: #ccc !important;
+            border: 1px solid #ccc;
+            color: #fff;
         }
     }
 }
+
+.buttonPrimary {
+    padding: .2em 1.5em;
+    background-color: #799bb2 !important;
+    text-transform: initial !important;
+    font-size: inherit;
+    border-radius: 7px;
+    border: 1px solid #799bb2;
+    color: #fff;
+    margin-top: 12px;
+    margin-bottom: 12px;
+  }
+  
+  .buttonPrimary:hover, .buttonPrimary:focus, .buttonPrimary:active {
+    background-color: #afc3d1 !important;
+    border: 1px solid #afc3d1;
+    color: #fff;
+  }
+  
+  .buttonPrimary:disabled {
+    background-color: #ccc !important;
+    border: 1px solid #ccc;
+    color: #fff;
+  }
+  
+  .buttonSecondary {
+    @extend .buttonPrimary;
+    background-color: #fff !important;
+    border: 1px solid #799bb2;
+    color: #799bb2;
+  }
+  .buttonSecondary:hover {
+    border: 1px solid #afc3d1;
+    color: #afc3d1;
+  }
+  
