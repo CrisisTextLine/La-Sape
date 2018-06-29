@@ -400,11 +400,19 @@
         }
         .numbers {
             .convo-number, .icons {
+                display: inline-flex;
                 float: left;
             }
             .level-count {
                 float: right;
             }
+        }
+
+        .user-icon-beta {
+            margin-left: 8px;
+            margin-top: -1px;
+            margin-bottom: -1px;
+            fill: #444;
         }
 
         .icons {
