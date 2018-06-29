@@ -78,9 +78,20 @@ $main-left-top: $tabs-height + $tabs-top;
         @extend .buttonSecondary;
         margin-right: 10px;
 
+        :focus, :hover {
+            background-color: #fff !important;
+            border: 1px solid #afc3d1;
+            color: #afc3d1;
+        }
+
         &.active {
             @extend .buttonPrimary;
             font-weight: bold;
+            :hover, :focus {
+                background-color: #afc3d1 !important;
+                border: 1px solid #afc3d1;
+                color: #fff;
+            }
         }
         &#tab-mgtplan {
             display: none;
