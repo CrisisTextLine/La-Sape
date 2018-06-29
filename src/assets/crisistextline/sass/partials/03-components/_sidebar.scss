@@ -276,7 +276,7 @@ $user-status-height: 9.25rem;
     ul.super-plus {
         li.chatUser {
             &.new-grad, &.year-plus {
-                .user-name:after {
+                .user-icon-display {
                     padding-left: .5em;
                     display: flex;
                     align-items: center;
@@ -284,14 +284,17 @@ $user-status-height: 9.25rem;
                     height: 1em;
                 }
             }
-
-            &.new-grad .user-name:after {
+            &.new-grad .user-icon-display:before {
                 content: $user-icon-baby-chick;
             }
             @for $i from 1 through length($yearStarList) {
                 &.counselor-year-#{$i} {
-                    @include counselor-year-star($i, ".user-name:after");
+                    @include counselor-year-star($i, ".user-icon-display:before");
                 }
+            }
+            .user-icon-beta {
+                fill: #444;
+                margin-left: 2px;
             }
         }
     }
