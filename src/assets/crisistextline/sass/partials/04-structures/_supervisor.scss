@@ -93,22 +93,6 @@
             border-bottom: 1px solid $color-light;
         }
     }
-    button {
-        font-size: .75em;
-        padding: .5em;
-        &.default {
-            background-color: $color-blue;
-            color: white;
-            &:hover {
-                background-color: $color-blue-hover;
-            }
-        }
-        &.dummy:hover {
-            background: $color-med;
-            color: black;
-        }
-
-    }
     .action-items-empty {
         padding: $padding-action-item;
     }
