@@ -75,12 +75,13 @@ $main-left-top: $tabs-height + $tabs-top;
     padding-bottom: 15px;
     .tab-item {
         display: inline-block;
-        @extend .buttonSecondary;
         margin-right: 10px;
+        &:not(.active) {
+            @extend .buttonSecondary;
+        }
 
         &.active {
-            @extend .buttonPrimary;
-            font-weight: bold;
+            @extend .buttonPrimary;        
         }
         &#tab-mgtplan {
             display: none;
