@@ -133,7 +133,7 @@ button.active,
     color: #fff;
   }
   
-  .buttonPrimary:hover, .buttonPrimary:focus, .buttonPrimary:active {
+  .buttonPrimary:enabled:hover, .buttonPrimary:enabled:focus, .buttonPrimary:active {
     background-color: #afc3d1 !important;
     border: 1px solid #afc3d1;
     color: #fff;
