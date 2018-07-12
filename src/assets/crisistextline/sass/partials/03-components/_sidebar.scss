@@ -292,6 +292,10 @@ $user-status-height: 9.25rem;
                     @include counselor-year-star($i, ".user-icon-display:before");
                 }
             }
+            .user-icon-display {
+                padding-left: .25em;
+                display: flex;
+            }
             .user-icon-beta {
                 fill: #444;
                 margin-left: 5px;
