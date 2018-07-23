@@ -10,6 +10,10 @@ $convo-plan-opacity: .10;
     height: calc(#{$convo-plan-height} + 3em);
     .summary-buttons {
         width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
         button.tab {
             padding: .75em;
         }
@@ -19,7 +23,7 @@ $convo-plan-opacity: .10;
         height: 20px;
         padding: 1px;
         border: none !important;
-        margin: .6em .5em 0;
+        margin: 0 .5em;
         background: image-url('sprites.png') no-repeat;
         background-position: -10px -130px;
         opacity: 0.9;
