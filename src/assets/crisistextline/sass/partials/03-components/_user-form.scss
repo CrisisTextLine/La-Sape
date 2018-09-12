@@ -1,0 +1,22 @@
+.user-form {
+  .radio-input {
+    display: inline-block;
+    overflow: hidden;
+
+    input, label {
+        float: left;
+    }
+    input {
+        clear: both;
+    }
+}
+
+  div {
+    margin-top: 5px;
+    margin-bottom: 5px;    
+  }
+
+  label.top {
+    vertical-align: top;
+  }
+}
