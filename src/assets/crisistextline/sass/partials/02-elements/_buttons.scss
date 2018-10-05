@@ -132,19 +132,19 @@ button.active,
     border: 1px solid #799bb2;
     color: #fff;
   }
-  
+
   .buttonPrimary:enabled:hover, .buttonPrimary:enabled:focus, .buttonPrimary:active {
     background-color: #afc3d1 !important;
     border: 1px solid #afc3d1;
     color: #fff;
   }
-  
+
   .buttonPrimary:disabled {
     background-color: #ccc !important;
     border: 1px solid #ccc;
     color: #fff;
   }
-  
+
   .buttonSecondary {
     @extend .standardButton;
     background-color: #fff !important;
@@ -156,4 +156,3 @@ button.active,
     border: 1px solid #afc3d1;
     color: #afc3d1;
   }
-  
