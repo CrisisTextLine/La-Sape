@@ -190,6 +190,14 @@
         text-align: center;
     }
 
+    .conversation .action.close {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 28px;
+        height: 28px;
+    }
+
     .conversation .action:hover {
         background-color: rgba(255, 255, 255, .2);
     }
