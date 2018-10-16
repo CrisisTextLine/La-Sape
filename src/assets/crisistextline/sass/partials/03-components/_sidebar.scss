@@ -29,29 +29,6 @@ $user-status-height: 9.25rem;
     }
 
     .user-status {
-        .user-name {
-            font-weight: bold;
-
-            @for $i from 2 through length($levelColorList) {
-                &.counselor-level-#{$i} {
-                    @include apply-level-color($i, color);
-                }
-            }
-            &.supervisor {
-                color: $color-supervisor;
-            }
-            &.new-grad:before,
-            &.year-plus:before {
-                padding-right: .75em;
-            }
-            &.new-grad:before {
-                content: $user-icon-baby-chick;
-            }
-            @for $i from 1 through length($yearStarList) {
-                @include counselor-year-star($i, "&.counselor-year-#{$i}:before");
-            }
-        }
-
         .supervisor {
             margin: 0 0 2px 0;
             .supervisor-mode {
