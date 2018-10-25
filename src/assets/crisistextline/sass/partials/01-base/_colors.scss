@@ -54,15 +54,21 @@ $color-9:           #722846;    // burgundy
 
 // CC LEVEL COLORS
 $color-trainee:     $color-med-dark;
-$color-level-1:     $color-dark;
-$color-level-2:     $color-blue;
-$color-level-3:     $color-purple;
-$color-level-4:     $color-pink;
-$color-level-5:     $color-gold;
+$color-level-1:     #797979;
+$color-level-2:     #000000;
+$color-level-3:     #489272;
+$color-level-4:     #979E10;
+$color-level-5:     #2296DD;
+$color-level-6:     #0C0C47;
+$color-level-7:     #6D1151;
+$color-level-8:     #EA4C83;
+$color-level-9:     #DB6414;
+$color-level-10:    #E5B52C;
+$color-level-11:    $color-level-10;
 $color-supervisor:  $color-red;
 $color-admin:       $color-red; // Currently set same as Super - need to come up w/ better separate color
 
-$levelColorList: $color-level-1 $color-level-2 $color-level-3 $color-level-4 $color-level-5;
+$levelColorList: $color-level-1 $color-level-2 $color-level-3 $color-level-4 $color-level-5 $color-level-6 $color-level-7 $color-level-8 $color-level-9 $color-level-10;
 @mixin apply-level-color($i, $attr) {
     #{$attr}: nth($levelColorList, $i);
 }
