@@ -5,7 +5,7 @@ $tabs-height: 2.5em;
 $main-left-top: $tabs-height + $tabs-top;
 
 #main-wrapper.fixed-namebar {
-    margin-top: $height-namebar-div;
+    padding-top: $height-namebar-div;
     overflow: none;
     @include calc(width, 100% - #{$width-sidebar-right});
     &> h1 {
