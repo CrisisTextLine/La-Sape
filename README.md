@@ -22,15 +22,22 @@ After the initial initialization, you'll just need to run the update to keep the
 ```
 $ npm start
 ```
+## Checkout the main branch
+
+1. The main branch for this repo is 'gh-pages'
+```
+$ git checkout gh-pages
+```
+
 
 ## Compiling to static HTML
 
-1. When you are done making your changes, make sure to run the following, to compile the production version of the static HTML and asset files:
+2. When you are done making your changes, make sure to run the following, to compile the production version of the static HTML and asset files:
 
 ```
 $ npm run build
 ```
 
-2. Once the build script has finished, commit to a new branch and submit a PR.
+3. Once the build script has finished, commit to a new branch and submit a PR.
 
 Fabricator builds both a static documentation site and optimized CSS and JS toolkit files. Static files are compiled in the `dist` directory. You can view the files here: [http://crisistextline.github.io/La-Sape](http://crisistextline.github.io/La-Sape)
