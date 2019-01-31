@@ -21,15 +21,9 @@ a.buttonPrimary {
     .namebar-right {
         float: right;
         .conversation-status {
-            border: 1px solid $color-blue;
-            background-color: $color-light;
             padding: .2em 1.5em;
-            border-radius: 7px;
-            @for $i from 1 through length($priorityColorList) {
-                &.priority-#{$i} {
-                    @include apply-priority-color($i, color);
-                }
-            }
+            position: relative;
+            top: 1px;
         }
         .actor-carrier {
             &:before {
@@ -83,17 +77,33 @@ a.buttonPrimary {
 }
 
 #tabs {
-    padding: .5em 0 1em 3em;
-    .tab-item {
+    padding: .5em 0 0 0;
+    border-bottom: 1px solid $color-blue;
+    margin: 1em 0 2em 3em;
+    width: calc(67% - 6em);
+    a.tab-item {
+        padding: .2em 1.5em;
+        text-transform: initial !important;
+        font-size: inherit;
+        border-radius: 7px;
+        border: 1px solid $color-blue;
         display: inline-block;
-        margin-right: 10px;
+        margin-right: -1px;
+        margin-bottom: -1px;
         text-decoration: none;
-        &:not(.active) {
-            @extend .buttonSecondary;
-        }
-
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+        background-color: #fff;
+        color: $color-blue;
         &.active {
-            @extend .buttonPrimary;        
+            background-color: $color-blue !important;
+            color: #fff;
+        }
+        &:hover {
+            background-color: #afc3d1 !important;
+            border: 1px solid #afc3d1;
+            border-bottom: 1px solid $color-blue;
+            color: #fff;
         }
     }
 }
@@ -102,13 +112,6 @@ a.buttonPrimary {
     padding-left: 3em;
     padding-right: 3em;
     width: 67%;
-}
-
-.tab-wrapper {
-    border-color: $color-light;
-    border-width: 1px 0;
-    border-style: solid;
-    padding: .5em 0;
 }
 
 div[role="main"] .right-sidebar {
