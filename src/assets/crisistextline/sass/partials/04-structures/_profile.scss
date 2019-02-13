@@ -15,15 +15,17 @@ a.buttonPrimary {
 .namebar {
     background-color: $color-med;
     padding: 25px 40px;
+    display: grid;
+    grid-template-columns: 320px auto;
+
     .conversation-count {
         padding-top: 2px;
     }
     .namebar-right {
-        float: right;
+        text-align: right;
+        padding-top: 7px;
         .conversation-status {
             padding: .2em 1.5em;
-            position: relative;
-            top: 1px;
         }
         .actor-carrier {
             &:before {
@@ -31,26 +33,14 @@ a.buttonPrimary {
                 font-weight: bold;
             }
         }
-        #convo-timestamp {
-            top: 4px;
+        .texter-action {
+            margin-top: 0px !important;
+            margin-bottom: 0px !important;
         }
-        #convo-id {
-            top: 4px;
-        }
-        // button, a.issue-warning {
-        //     background-color: $color-light !important;
-        //     color: $color-dark;
-        //     &:hover {
-        //         background-color: $color-med-dark !important;
-        //         color: $color-light;
-        //     }
-        // }
     }
     .title-right {
-        float: right;
+        display: inline-block;
         margin-left: 1rem;
-        margin-top: .25em;
-        position: relative;
     }
     .icons {
         display: inline-block;
@@ -342,6 +332,11 @@ div[role="main"] .right-sidebar {
 }
 
 .profile-mgtplan {
+
+    h2 {
+        margin-top: 1em;
+    }
+
     .form-field {
         margin: 0;
         padding: 1em 0;
@@ -481,24 +476,19 @@ div[role="main"] .right-sidebar {
 $icon-width: 2em;
 
 .conversation-count.user-icon {
-    line-height: $icon-width;
     width: 2.5em;
-    float: left;
+    display: inline-block;
     background-color: transparent;
 
-    span {
-        text-align: center;
-        margin: 0;
-        width: auto;
-        height: auto;
-        color: white;
+    a {
+        display: inline-block;
+        text-decoration: none;
+        color: #fff;
 
-        a {
-            display: block;
-            width: 3em;
-            line-height: 2em;
-            color: white;
-            text-decoration: none;
+        svg {
+            height: 35px;
+            position: absolute;
+            top: 27px;
         }
     }
 }
@@ -548,7 +538,7 @@ $icon-width: 2em;
 .actor-name-box {
     margin: 0;
     position: relative;
-    @include calc(width, 100% - #{$width-sidebar-right} - 1em);
+    display: inline-block;
     input, .actor-name, a {
         font-size: 21px;
         font-weight: bold;
@@ -584,7 +574,6 @@ $icon-width: 2em;
 
 div[role="main"] .profile-fields {
     li {
-        clear: both;
         margin-top: .75em;
         margin-bottom: .75em;
 
@@ -640,6 +629,13 @@ div[role="main"] .profile-fields {
     }
     .actor-name-box {
         display: inline-block;
+    }
+    .conversation-count {
+        a {
+            svg {
+                top: 14px;
+            }
+        }
     }
 }
 
