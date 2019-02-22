@@ -16,10 +16,11 @@ a.buttonPrimary {
     background-color: $color-med;
     padding: 25px 40px;
     display: grid;
-    grid-template-columns: 320px auto;
+    grid-template-columns: auto auto;
 
     .conversation-count {
         padding-top: 2px;
+        color: #fff;
     }
     .namebar-right {
         text-align: right;
@@ -484,12 +485,12 @@ $icon-width: 2em;
         display: inline-block;
         text-decoration: none;
         color: #fff;
+    }
 
-        svg {
-            height: 35px;
-            position: absolute;
-            top: 27px;
-        }
+    svg {
+        height: 35px;
+        position: absolute;
+        top: 27px;
     }
 }
 
