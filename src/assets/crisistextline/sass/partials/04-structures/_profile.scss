@@ -12,6 +12,16 @@ a.buttonPrimary {
     text-decoration: none;
 }
 
+.profile-page {
+    display: grid;
+    grid-template-rows: auto auto;
+}
+
+.profile-main {
+    display: grid;
+    grid-template-columns: auto 33%;
+}
+
 .namebar {
     background-color: $color-med;
     padding: 25px 40px;
@@ -36,8 +46,10 @@ a.buttonPrimary {
         }
         .texter-action {
             margin-top: 0px !important;
-            margin-bottom: 0px !important;
         }
+    }
+    .namebar-right > * {
+        margin-bottom: .5em !important;
     }
     .title-right {
         display: inline-block;
@@ -59,6 +71,11 @@ a.buttonPrimary {
             background: url('data:image/svg+xml;utf8,<svg fill="%23444444" width="18" height="18" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 71.96 71.96"><path d="M59.69,0H12.27A12.27,12.27,0,0,0,0,12.27V59.69A12.27,12.27,0,0,0,12.27,72H59.69A12.27,12.27,0,0,0,72,59.69V12.27A12.27,12.27,0,0,0,59.69,0ZM41.83,62.71c-1.9,0-3-.72-4.19-2.52L29.21,47l-3.87,4v6.27c0,3-2.16,5.48-4.82,5.48s-4.82-2.45-4.82-5.48V14.73c0-3,2.15-5.48,4.82-5.48s4.82,2.45,4.82,5.48V38.65l12-13c1.4-1.51,2.53-2.45,4.25-2.45,2.6,0,4.25,2.38,4.25,4.9a6.86,6.86,0,0,1-2.22,4.76l-7.61,7.42,9.07,13.9a6.25,6.25,0,0,1,1.2,3.53A4.67,4.67,0,0,1,41.83,62.71ZM54.47,50.77a5.82,5.82,0,1,1,5.79-5.82A5.81,5.81,0,0,1,54.47,50.77Z"/></svg>') no-repeat;
         }
     }
+    .icons > * {
+        display: inline-block;
+        position: relative;
+        top: 1px;
+    }
     .local-timestamp {
         &:hover {
             padding-left: 1em;
@@ -70,8 +87,8 @@ a.buttonPrimary {
 #tabs {
     padding: .5em 0 0 0;
     border-bottom: 1px solid $color-blue;
-    margin: 1em 0 2em 3em;
-    width: calc(67% - 6em);
+    margin-top: 1em;
+
     a.tab-item {
         padding: .2em 1.5em;
         text-transform: initial !important;
@@ -102,7 +119,6 @@ a.buttonPrimary {
 .main-left {
     padding-left: 3em;
     padding-right: 3em;
-    width: 67%;
 }
 
 div[role="main"] .right-sidebar {
@@ -110,9 +126,6 @@ div[role="main"] .right-sidebar {
     top: $header-height + $height-namebar-div + .75em;
     padding: 0 1.5em;
     padding-bottom: 3em;
-    width: $width-sidebar-right;
-    height: 100%;
-    float: right;
 
     h3 {
         margin: 0;
@@ -545,7 +558,7 @@ $icon-width: 2em;
         font-weight: bold;
     }
     .actor-name {
-        margin: .2em 0 0 .5em;
+        margin: .2em .5em 0 .5em;
         cursor: pointer;
         display: inline-block;
     }
@@ -556,7 +569,6 @@ $icon-width: 2em;
         font-weight: normal;
         position: relative;
         top: 5px;
-        left: .5em;
         margin-left: .5em;
         &:hover {
             color: $color-med-dark;
@@ -565,6 +577,14 @@ $icon-width: 2em;
     &:hover {
         .actor-edit {
             display: inline;
+        }
+    }
+    .icons {
+        .repeater-flag-box {
+            position: relative;
+            display: inline-block;
+            margin-left: 2em;
+            top: -5px;
         }
     }
 }
