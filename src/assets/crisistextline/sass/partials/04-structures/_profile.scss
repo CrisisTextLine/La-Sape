@@ -14,7 +14,8 @@ a.buttonPrimary {
 
 .profile-page {
     display: grid;
-    grid-template-rows: auto auto;
+    grid-template-rows: min-content auto;
+    min-height: 100%;
 }
 
 .profile-main {
