@@ -573,7 +573,7 @@ $icon-width: 2em;
         top: 5px;
         margin-left: .5em;
         &:hover {
-            color: $color-med-dark;
+            color: white;
         }
     }
     &:hover {
@@ -588,6 +588,27 @@ $icon-width: 2em;
             margin-left: 2em;
             top: -5px;
         }
+    }
+}
+
+.actor-names-tooltip {
+    &.ui-tooltip::after {
+        right: 80%;
+        top: -.5em;
+        bottom: inherit;
+        border-top: 0px solid transparent;
+        border-bottom: .5em solid $color-blue;
+    }
+    background-color: white;
+    padding: 0;
+    .header {
+        background-color: $color-blue;
+        padding: .5em;
+    }
+    .names {
+        padding: .5em;
+        background-color: white;
+        color: $color-dark;
     }
 }
 
