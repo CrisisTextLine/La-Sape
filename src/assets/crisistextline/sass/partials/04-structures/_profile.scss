@@ -606,6 +606,8 @@ $icon-width: 2em;
         padding: .5em;
     }
     .names {
+        list-style-type: none;
+        margin: 0;
         padding: .5em;
         background-color: white;
         color: $color-dark;
