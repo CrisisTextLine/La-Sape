@@ -34,18 +34,6 @@
     text-align: center;
 }
 
-$user-icon-baby-chick: "🐣";
-$user-icon-year-1: "🌟";
-$user-icon-year-2: "💫";
-$user-icon-year-3: "✨";
-$user-icon-year-4: "⚡️";
-$yearStarList: $user-icon-year-1 $user-icon-year-2 $user-icon-year-3 $user-icon-year-4;
-@mixin counselor-year-star($year, $element) {
-    #{$element} {
-        content: nth($yearStarList, $year);
-    }
-}
-
 @mixin prioritize-arrow($size) {
     font-size: $size;
     opacity: .8;
