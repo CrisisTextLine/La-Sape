@@ -248,63 +248,6 @@ $user-status-height: 9.25rem;
     padding: 0;
 }
 
-// User emoji icons
-.chat {
-    ul.super-plus {
-        li.chatUser {
-            &.new-grad, &.year-plus {
-                .user-icon-display {
-                    padding-left: .5em;
-                    display: flex;
-                    align-items: center;
-                    line-height: 1em;
-                    height: 1em;
-                }
-            }
-            &.new-grad .user-icon-display:before {
-                content: $user-icon-baby-chick;
-            }
-            @for $i from 1 through length($yearStarList) {
-                &.counselor-year-#{$i} {
-                    @include counselor-year-star($i, ".user-icon-display:before");
-                }
-            }
-            .user-icon-display {
-                padding-left: .25em;
-                display: flex;
-            }
-            .user-icon-beta {
-                fill: #444;
-                margin-left: 5px;
-            }
-        }
-    }
-
-    ul.counselor {
-        .user-count-container {
-            visibility: hidden;
-        }
-
-        li.chatUser {
-            &.new-grad, &.year-plus {
-                .user-name:before {
-                    position: absolute;
-                    left: 0;
-                }
-            }
-
-            &.new-grad .user-name:before {
-                content: $user-icon-baby-chick;
-            }
-            @for $i from 1 through length($yearStarList) {
-                &.counselor-year-#{$i} {
-                    @include counselor-year-star($i, ".user-name:before");
-                }
-            }
-        }
-    }
-}
-
 .sidebar-tabs {
     position: relative;
     padding: .5em 1em 0;
