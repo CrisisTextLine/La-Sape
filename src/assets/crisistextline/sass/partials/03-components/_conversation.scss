@@ -90,10 +90,7 @@
     }
     .conversation {
         &.minimized {
-
             .conversation-content,
-            .conversation-title .timestamp,
-            .conversation-title .pending-transfer,
             .conversation-blocker {
                 display: none;
             }
@@ -451,12 +448,6 @@
 
     &:before { content: '[started '; }
     &:after { content: ']'; }
-}
-
-.pending-transfer {
-    font-weight: bold;
-    margin-left: 1em;
-    font-size: .8em;
 }
 
 :not(tr).pending {
