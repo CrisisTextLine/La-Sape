@@ -98,8 +98,10 @@
         background: white;
 
         &.minimized {
+
             width: 200px;
             padding-bottom: 0;
+
             .conversation-content,
             .conversation-blocker {
                 display: none;
