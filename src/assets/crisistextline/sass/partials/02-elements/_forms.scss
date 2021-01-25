@@ -103,6 +103,27 @@ textarea {
     }
 }
 
+.vertical-options {
+    label {
+        vertical-align: top;
+    }
+    label + div {
+        display: inline-block;
+        overflow: hidden;
+
+        input[type="radio"],
+        input[type="checkbox"],
+        input[type="radio"] + label,
+        input[type="checkbox"] + label {
+            float: left;
+        }
+        input[type="radio"],
+        input[type="checkbox"]{
+            clear: both;
+        }
+    }
+}
+
 input[type="text"]::-webkit-input-placeholder,
 input[type="search"]::-webkit-input-placeholder,
 input[type="password"]::-webkit-input-placeholder,
